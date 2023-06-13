@@ -1,15 +1,15 @@
 # Punto 5. 
 
-import json
+import json # Llama la función
 import requests
 
-url1 = 'https://catfact.ninja/fact'
+url1 = 'https://catfact.ninja/fact'  # Variable que guarda el API
 url2 = 'https://www.boredapi.com/api/activity'
 url3 = 'https://official-joke-api.appspot.com/random_joke'
 
-def datosAleatoriosDeGatos(*args): 
-    petición = requests.get(url1)
-    respuesta = petición.text
+def datosAleatoriosDeGatos(*args): # Definimos función. 
+    petición = requests.get(url1)  # Extraemos la info del API. 
+    respuesta = petición.text  #  Devuelve la info en un str
     return(respuesta)
 
 def actividadeAleatorias(*args): 
